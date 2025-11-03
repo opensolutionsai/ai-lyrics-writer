@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // 1. Activate your n8n workflow.
         // 2. Click the 'Webhook' node and copy the 'Production' URL.
         // 3. Paste the URL here:
-        const N8N_WEBHOOK_URL = 'https://openbookai285.app.n8n.cloud/webhook-test/ai-song-generator-2.5-pro';
+        const N8N_WEBHOOK_URL = 'https://openbookai285.app.n8n.cloud/webhook/ai-song-generator-2.5-pro';
         
         if (N8N_WEBHOOK_URL === 'YOUR_N8N_WEBHOOK_PRODUCTION_URL_HERE') {
             alert('Error: Please update the N8N_WEBHOOK_URL in script.js');
