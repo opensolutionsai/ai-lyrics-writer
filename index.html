@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Songwriter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>AI Songwriter</h1>
+        <form id="song-form">
+            <label for="song-language">Song Language:</label>
+            <input type="text" id="song-language" name="song-language" required>
+            
+            <label for="song-prompt">Song Prompt:</label>
+            <textarea id="song-prompt" name="song-prompt" rows="4" required></textarea>
+            
+            <label for="example-lyrics">Example Lyrics (for style):</label>
+            <textarea id="example-lyrics" name="example-lyrics" rows="4"></textarea>
+            
+            <button type="submit" id="generate-btn">Generate Song</button>
+        </form>
+        
+        <div id="loader" class="hidden">Loading...</div>
+        
+        <div id="results" class="hidden">
+            <h2>Original Song (from Gemini)</h2>
+            <pre id="original-song-output"></pre>
+            
+            <h2>Corrected Song (from OpenAI)</h2>
+            <pre id="corrected-song-output"></pre>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
